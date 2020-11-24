@@ -3,6 +3,7 @@ wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -P
 chmod u+x ~/tools/nvim.appimage 
 ln -s ~/tools/nvim.appimge ~/tools/nvim
 echo "export PATH=$HOME/tools/nvim:$PATH" >> ~/.bashrc
+echo "export PATH=$PATH:$HOME/tools/" >> ~/.bashrc
 sudo ldconfig
 
 mkdir -p ~/.config/nvim/
